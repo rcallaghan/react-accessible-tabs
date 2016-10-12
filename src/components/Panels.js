@@ -18,11 +18,11 @@ class Panels extends Component {
                     return (
                         <Panel
                             key={id}
-                            content={panel.content}
                             id={id}
                             index={index}
-                            selectedIndex={selectedIndex}
-                        />
+                            selectedIndex={selectedIndex}>
+                            {panel.content}
+                        </Panel>
                     );
                 })}
             </div>
